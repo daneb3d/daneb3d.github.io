@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>DaneB3D — Custom 3D Printing Services</title>
+
+<meta name="description" content="DaneB3D offers professional custom 3D printing services. Upload STL or OBJ files to receive a personalized quote within 48 hours. Payments accepted via PayPal, Venmo, or Zelle.">
+
+<style>
+/* ======================================================
+   DESIGN SYSTEM — DaneB3D
+   ====================================================== */
+
+:root{
+  --bg:#0b0f16;
+  --surface:#121826;
+  --surface-alt:#0f1522;
+  --border:rgba(255,255,255,0.10);
+  --text:rgba(255,255,255,0.92);
+  --muted:rgba(255,255,255,0.65);
+  --accent:#38bdf8;
+  --success:#22c55e;
+  --warn:#f97316;
+  --radius-lg:18px;
+  --radius-md:14px;
+  --radius-sm:10px;
+}
+
+/* ======================================================
+   RESET
+   ====================================================== */
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+img{max-width:100%;display:block}
+
+/* ======================================================
+   BASE
+   ====================================================== */
+
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system,
+               Segoe UI, Roboto, Helvetica, Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+}
+
+/* ======================================================
+   LAYOUT
+   ====================================================== */
+
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:28px 20px 80px;
+}
+
+section{
+  margin-top:48px;
+}
+
+.grid{
+  display:grid;
+  gap:20px;
+}
+
+.grid.two{
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+  padding:22px;
+}
+
+/* ======================================================
+   TYPOGRAPHY
+   ====================================================== */
+
+h1,h2,h3{
+  margin:0 0 10px;
+  letter-spacing:-0.3px;
+}
+
+h1{font-size:32px}
+h2{font-size:22px}
+h3{font-size:18px}
+
+p{
+  margin:0 0 12px;
+  color:var(--muted);
+  font-size:15px;
+}
+
+.small{
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* ======================================================
+   HEADER
+   ====================================================== */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 0;
+}
+
+.brand{
+  font-weight:900;
+  font-size:18px;
+}
+
+.nav{
+  display:flex;
+  gap:12px;
+}
+
+/* ======================================================
+   BUTTONS
+   ====================================================== */
+
+.btn{
+  padding:12px 18px;
+  border-radius:var(--radius-md);
+  border:1px solid var(--border);
+  background:transparent;
+  color:var(--text);
+  font-weight:700;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+.btn.primary{
+  background:var(--accent);
+  color:#041018;
+  border:none;
+}
+
+.btn.paypal{background:#003087;color:white;border:none}
+.btn.venmo{background:#008cff;color:white;border:none}
+.btn.zelle{background:#6b2e8b;color:white;border:none}
+
+/* ======================================================
+   HERO
+   ====================================================== */
+
+.hero h1{
+  max-width:640px;
+}
+
+.hero p{
+  max-width:680px;
+}
+
+/* ======================================================
+   FORM
+   ====================================================== */
+
+label{
+  font-size:13px;
+  color:var(--muted);
+  display:block;
+  margin-bottom:6px;
+}
+
+input,textarea{
+  width:100%;
+  padding:12px;
+  border-radius:var(--radius-sm);
+  border:1px solid var(--border);
+  background:var(--surface-alt);
+  color:var(--text);
+}
+
+textarea{resize:vertical}
+
+/* ======================================================
+   PAYMENTS
+   ====================================================== */
+
+.payments{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+/* ======================================================
+   FOOTER
+   ====================================================== */
+
+footer{
+  margin-top:80px;
+  padding-top:20px;
+  border-top:1px solid var(--border);
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <div class="brand">DaneB3D</div>
+  <nav class="nav">
+    <a href="#order" class="btn primary">Send for a Quote</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Professional Custom 3D Printing</h1>
+  <p>
+    DaneB3D provides reliable custom 3D printing services for individuals,
+    collectors, creators, and small businesses.
+    Upload your <strong>STL</strong> or <strong>OBJ</strong> file and receive
+    a personalized quote — typically within <strong>48 hours</strong>.
+  </p>
+</section>
+
+<section>
+  <div class="grid two">
+    <div class="card">
+      <h3>Accepted File Formats</h3>
+      <p>Only STL and OBJ files are accepted.</p>
+      <p class="small">
+        This ensures compatibility with professional slicing and printing workflows.
+        Other formats, archives, or links will not be reviewed.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Response Time</h3>
+      <p>
+        Most inquiries receive a response within 48 hours.
+      </p>
+      <p class="small">
+        Complex models or large orders may take additional review time.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>How the Process Works</h2>
+
+    <p><strong>1. Upload your file</strong><br>
+    Submit your STL or OBJ file using the form below. Include any notes about size,
+    color, quantity, or deadlines.</p>
+
+    <p><strong>2. File review</strong><br>
+    Your model is reviewed for printability, scale, material considerations,
+    and estimated print time.</p>
+
+    <p><strong>3. Quote sent</strong><br>
+    You’ll receive an email with pricing, timeline, and payment instructions.</p>
+
+    <p><strong>4. Payment</strong><br>
+    Payment is accepted via PayPal, Venmo, or Zelle after the quote is approved.</p>
+
+    <p><strong>5. Printing & delivery</strong><br>
+    Once paid, your order is printed and prepared for delivery or pickup.</p>
+  </div>
+</section>
+
+<section id="order">
+  <div class="card">
+    <h2>Custom Order Submission</h2>
+
+    <form
+      action="https://formsubmit.co/daneb3d@outlook.com"
+      method="POST"
+      enctype="multipart/form-data">
+
+      <input type="hidden" name="_subject" value="Custom Order Request">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label>Your Name</label>
+      <input type="text" name="name" required>
+
+      <label style="margin-top:14px">Your Email</label>
+      <input type="email" name="email" required>
+
+      <label style="margin-top:14px">STL or OBJ File</label>
+      <input type="file" name="attachment" accept=".stl,.obj" required>
+
+      <label style="margin-top:14px">Additional Notes (optional)</label>
+      <textarea name="notes" rows="5"
+        placeholder="Size, material preference, color, quantity, deadline, finishing, or delivery details."></textarea>
+
+      <button type="submit" class="btn primary" style="margin-top:18px">
+        Send for a Quote
+      </button>
+
+      <p class="small" style="margin-top:12px">
+        By submitting this form, you acknowledge that quotes are provided manually
+        and responses typically occur within 48 hours.
+      </p>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Payment Methods</h2>
+
+    <p>
+      Payment is only required after you receive and approve your quote.
+      Please include your name or order reference when sending payment.
+    </p>
+
+    <div class="payments">
+      <a href="YOUR_PAYPAL_LINK" class="btn paypal">Pay with PayPal</a>
+      <a href="YOUR_VENMO_LINK" class="btn venmo">Pay with Venmo</a>
+      <div class="btn zelle">Zelle: daneb3d@outlook.com</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Important Notes</h2>
+    <p class="small">
+      Files are reviewed prior to printing. DaneB3D reserves the right to decline
+      any request that is unsafe, unprintable, or violates applicable laws.
+    </p>
+    <p class="small">
+      Pricing depends on print time, material usage, complexity, and finishing requirements.
+      Quotes are valid for a limited time unless otherwise stated.
+    </p>
+  </div>
+</section>
+
+<footer>
+  DaneB3D — Custom 3D Printing Services<br>
+  daneb3d@outlook.com
+</footer>
+
+</div>
+</body>
+</html>
