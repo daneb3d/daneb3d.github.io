@@ -9,10 +9,6 @@
 <meta name="description" content="DaneB3D offers professional custom 3D printing services. Upload STL or OBJ files to receive a personalized quote within 48 hours. Payments accepted via PayPal, Venmo, or Zelle.">
 
 <style>
-/* ======================================================
-   DESIGN SYSTEM — DaneB3D
-   ====================================================== */
-
 :root{
   --bg:#0b0f16;
   --surface:#121826;
@@ -28,17 +24,9 @@
   --radius-sm:10px;
 }
 
-/* ======================================================
-   RESET
-   ====================================================== */
-
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 img{max-width:100%;display:block}
-
-/* ======================================================
-   BASE
-   ====================================================== */
 
 body{
   font-family: ui-sans-serif, system-ui, -apple-system,
@@ -47,10 +35,6 @@ body{
   color:var(--text);
   line-height:1.5;
 }
-
-/* ======================================================
-   LAYOUT
-   ====================================================== */
 
 .container{
   max-width:1100px;
@@ -78,10 +62,6 @@ section{
   padding:22px;
 }
 
-/* ======================================================
-   TYPOGRAPHY
-   ====================================================== */
-
 h1,h2,h3{
   margin:0 0 10px;
   letter-spacing:-0.3px;
@@ -102,10 +82,6 @@ p{
   color:var(--muted);
 }
 
-/* ======================================================
-   HEADER
-   ====================================================== */
-
 header{
   display:flex;
   justify-content:space-between;
@@ -122,10 +98,6 @@ header{
   display:flex;
   gap:12px;
 }
-
-/* ======================================================
-   BUTTONS
-   ====================================================== */
 
 .btn{
   padding:12px 18px;
@@ -144,14 +116,6 @@ header{
   border:none;
 }
 
-.btn.paypal{background:#003087;color:white;border:none}
-.btn.venmo{background:#008cff;color:white;border:none}
-.btn.zelle{background:#6b2e8b;color:white;border:none}
-
-/* ======================================================
-   HERO
-   ====================================================== */
-
 .hero h1{
   max-width:640px;
 }
@@ -159,10 +123,6 @@ header{
 .hero p{
   max-width:680px;
 }
-
-/* ======================================================
-   FORM
-   ====================================================== */
 
 label{
   font-size:13px;
@@ -182,19 +142,19 @@ input,textarea{
 
 textarea{resize:vertical}
 
-/* ======================================================
-   PAYMENTS
-   ====================================================== */
-
 .payments{
   display:flex;
-  flex-wrap:wrap;
-  gap:12px;
+  justify-content:center;
+  align-items:center;
 }
 
-/* ======================================================
-   FOOTER
-   ====================================================== */
+.payment-qr{
+  max-width:560px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background:#ffffff;
+  padding:10px;
+}
 
 footer{
   margin-top:80px;
@@ -223,8 +183,8 @@ footer{
   <p>
     DaneB3D provides reliable custom 3D printing services for individuals,
     collectors, creators, and small businesses.
-    Upload your <strong>STL</strong> or <strong>OBJ</strong> file and receive
-    a personalized quote — typically within <strong>48 hours</strong>.
+    Upload your STL or OBJ file and receive
+    a personalized quote — typically within 48 hours.
   </p>
 </section>
 
@@ -255,21 +215,21 @@ footer{
   <div class="card">
     <h2>How the Process Works</h2>
 
-    <p><strong>1. Upload your file</strong><br>
+    <p>1. Upload your file<br>
     Submit your STL or OBJ file using the form below. Include any notes about size,
     color, quantity, or deadlines.</p>
 
-    <p><strong>2. File review</strong><br>
+    <p>2. File review<br>
     Your model is reviewed for printability, scale, material considerations,
     and estimated print time.</p>
 
-    <p><strong>3. Quote sent</strong><br>
+    <p>3. Quote sent<br>
     You’ll receive an email with pricing, timeline, and payment instructions.</p>
 
-    <p><strong>4. Payment</strong><br>
+    <p>4. Payment<br>
     Payment is accepted via PayPal, Venmo, or Zelle after the quote is approved.</p>
 
-    <p><strong>5. Printing & delivery</strong><br>
+    <p>5. Printing & delivery<br>
     Once paid, your order is printed and prepared for delivery or pickup.</p>
   </div>
 </section>
@@ -317,13 +277,11 @@ footer{
 
     <p>
       Payment is only required after you receive and approve your quote.
-      Please include your name or order reference when sending payment.
+      Scan the QR code below for PayPal, Venmo, or Zelle.
     </p>
 
     <div class="payments">
-      <a href="YOUR_PAYPAL_LINK" class="btn paypal">Pay with PayPal</a>
-      <a href="YOUR_VENMO_LINK" class="btn venmo">Pay with Venmo</a>
-      <div class="btn zelle">Zelle: jon.bellamy@hotmail.com</div>
+      <img src="https://image2url.com/r2/default/images/1770575143049-8c3b2134-4339-475a-b3ee-24ed62f67470.png" alt="PayPal Venmo Zelle QR Codes" class="payment-qr">
     </div>
   </div>
 </section>
